@@ -1,12 +1,19 @@
-namespace PARCIAL-MARTIN-TABORDA.Models;
+using Parcial_Martin_Taborda.Utils;
+namespace Parcial_Martin_Taborda.Models;
 
-public Class ClimbingRoute {
-
+public class ClimbingRoute
+{
     public int Id { get; set;}
-    public string LocationName {get;set;}
-    public string SectorName {get;set;}
-    public string RouteName {get; set;}
+    
+    public string? LocationName {get;set;}
+    
+    public string? SectorName {get;set;}
+    
+    public string? RouteName {get; set;}
+    
+    public string? Grade {get; set;}
+    
     public int Bolts {get; set;}
-    public ClimbingRouteStatus Status {get; set;} 
-
+    
+    public RouteStatus Type {get; set;}
 }
